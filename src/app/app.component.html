@@ -1,0 +1,23 @@
+<!-- app.component.html -->
+
+<div class="container">
+  <h1>
+    Welcome to {{title}}!!
+  </h1>
+
+  <nav>
+
+    <a routerLink="/main" routerLinkActive="active">Inicio </a>
+    
+    <a routerLink="/request" routerLinkActive="active">Access Request</a>
+    <a routerLink="/currency" routerLinkActive="active">Currency </a>
+    <a routerLink="/info" routerLinkActive="active">Informacion </a>
+    </nav>
+
+
+  
+  <br />
+  <!---<p>Form value: {{ angForm.value | json }}</p>
+  <p>Form status: {{ angForm.status | json }}</p>---> <!-----Aca para poner el estatus-------->
+</div>
+<router-outlet> </router-outlet>

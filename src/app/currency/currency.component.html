@@ -1,0 +1,13 @@
+
+
+<div class="container">
+
+<div *ngIf="cryptos">
+   <div id="crypto-container" *ngFor="let crypto of objectKeys(cryptos)">
+      <h2>Monto: </h2>
+      <span class="left">{{ crypto }}</span>
+      <span class="right">{{ cryptos[crypto].USD | currency:'USD':true }}</span>
+    </div>
+  </div>
+
+</div>
